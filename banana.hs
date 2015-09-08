@@ -2,6 +2,7 @@ module Banana where
 
 import Data.List
 
+-- 1.a
 
 fst' (a,b) = a
 
