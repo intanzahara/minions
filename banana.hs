@@ -16,11 +16,6 @@ take' n (x:xs) = x : take' (n-1) xs
 
 --pembatas
 
-drop' _ [] = []
-drop' 0 (x:xs) = (x:xs)
-drop' n (x:xs) = drop' (n-1) xs
-
---pembatas
 
 fst' (a,b) = a
 
@@ -45,6 +40,11 @@ last' (x:xs) = last' xs
 --pembatas
 
 tail' (x:xs) = xs
+
+--pembatas
+
+init' [y] = []
+init' (x:xs) = x : init' xs
 
 --pembatas
 
